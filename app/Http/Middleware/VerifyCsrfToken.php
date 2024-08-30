@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
+        'login', // CSRFトークンの検証を無効にするルート
+        'api/*', // すべてのAPIルート
     ];
 }
