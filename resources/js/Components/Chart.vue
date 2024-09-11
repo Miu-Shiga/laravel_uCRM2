@@ -26,7 +26,7 @@ const barData = reactive({
 </script>
 
 <template>
-    <div v-sow="props.data">
+    <div v-show="props.data">
         <BarChart :chartData="barData" /> 
     </div>
 </template>
